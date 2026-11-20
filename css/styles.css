@@ -407,6 +407,14 @@ em {
   border-radius: 8px;
 }
 
+.project-card-featured .project-visual,
+.project-card-featured .project-meta,
+.project-card-featured > p {
+  width: 85%;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
 .project-visual {
   position: relative;
 }

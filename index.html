@@ -41,10 +41,13 @@
     </header>
     <main id="main">
       <section
-        class="hero hero-editorial page-width"
+        class="hero hero-editorial hero-centered page-width"
         aria-labelledby="hero-title"
       >
         <div class="hero-content">
+          <p class="hero-roles">
+            Product Design · Design Engineering · Product Management
+          </p>
           <h1 id="hero-title" aria-label="Hi, I’m Luciana.">
             Hi, I’m
             <span class="name-accent hero-name" aria-hidden="true"
@@ -62,24 +65,28 @@
             >
           </h1>
           <p class="hero-description">
-            Computer Science student exploring the space between thoughtful
-            design and technology. I enjoy creating digital experiences that are
-            useful, simple, and people-centered.
+            Computer Science student at UTRGV, minoring in Electrical Engineering.
           </p>
-          <a class="button button-primary" href="#work"
-            >View selected work <span aria-hidden="true">↗</span></a
+          <p class="hero-description hero-intro">
+            I love working with others, sharing ideas, and finding ways to make
+            things better. I'm naturally curious and always excited to learn
+            something new.
+          </p>
+          <a
+            class="button button-primary"
+            href="Luciana%20Flores.pdf"
+            target="_blank"
+            rel="noopener"
+            >View my resume <span aria-hidden="true">↗</span></a
           >
         </div>
-        <a class="hero-scroll" href="#work"
-          ><span aria-hidden="true">↓</span> Explore below</a
-        >
       </section>
       <section
         id="work"
         class="work-section page-width"
         aria-labelledby="work-title"
       >
-        <div class="section-heading">
+        <div class="section-heading section-heading-centered">
           <div>
             <h2 id="work-title" aria-label="Some of my projects.">
               Some of my
@@ -91,39 +98,46 @@
           </div>
         </div>
         <div class="project-grid">
-          <a class="project-card project-card-featured" href="project.html?project=01">
-            <div class="project-visual">
-              <span class="project-hover-stars" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span>
-              </span>
-              <div class="project-image project-image-rose">
-                <img class="project-thumbnail" src="wing-snob.png" alt="Wing Snob mobile ordering redesign showing serving options, a skip-to-menu confirmation, and menu categories" width="1672" height="941" loading="lazy" />
-                <span class="image-index image-index-badge">01</span>
-                <span class="card-open" aria-hidden="true">↗</span>
+          <a
+            class="project-card project-card-featured"
+            href="project.html?project=01"
+          >
+            <div class="project-visual project-scrapbook">
+              <span class="scrapbook-note" aria-hidden="true"></span>
+              <span class="scrapbook-tape" aria-hidden="true"></span>
+              <div class="project-image project-image-wing-snob">
+                <svg class="scrapbook-sticker" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2 15 8.9 22.5 9.6 16.8 14.5 18.5 21.8 12 18 5.5 21.8 7.2 14.5 1.5 9.6 9 8.9Z" />
+                </svg>
+                <svg class="scrapbook-sticker scrapbook-sticker--pink" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2 15 8.9 22.5 9.6 16.8 14.5 18.5 21.8 12 18 5.5 21.8 7.2 14.5 1.5 9.6 9 8.9Z" />
+                </svg>
+                <svg class="scrapbook-sticker scrapbook-sticker--small" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2 15 8.9 22.5 9.6 16.8 14.5 18.5 21.8 12 18 5.5 21.8 7.2 14.5 1.5 9.6 9 8.9Z" />
+                </svg>
+                <img
+                  class="project-thumbnail"
+                  src="wing-snob.png"
+                  alt="Wing Snob mobile ordering redesign showing serving options, a skip-to-menu confirmation, and menu categories"
+                  width="1462"
+                  height="816"
+                  loading="lazy"
+                />
+                <div class="scrapbook-labels" aria-hidden="true">
+                  <span class="scrapbook-number">01</span>
+                  <span class="scrapbook-caption">case study <span>↗</span></span>
+                </div>
               </div>
             </div>
             <div class="project-meta">
-              <h3>Wing Snob — Mobile Ordering Redesign</h3>
-              <span class="project-category">UX/UI Design</span>
+              <h3>Wing Snob Mobile Ordering Redesign</h3>
+              <span class="project-category">UX/UI Case Study</span>
             </div>
-            <p>Redesigned the ordering flow to let users skip the initial location and order-type selection, making it easier to browse the menu before deciding how to order.</p></a
-          >
-          <a class="project-card" href="project.html?project=02"
-            ><div class="project-image project-image-silver">
-              <span class="image-index">02</span>
-              <div class="image-placeholder">
-                <span class="placeholder-cross" aria-hidden="true"></span
-                ><span>Project image placeholder</span>
-              </div>
-              <span class="card-open" aria-hidden="true">↗</span>
-            </div>
-            <div class="project-meta">
-              <h3>[Project title 02]</h3>
-              <span class="project-category">[Category]</span>
-            </div>
-            <p>[A brief project description will go here.]</p></a
-          >
+            <p>
+              Streamlining the pickup and delivery flow to reduce menu friction
+              and speed up mobile checkout.
+            </p>
+          </a>
         </div>
       </section>
       <section class="contact-strip page-width" aria-labelledby="connect-title">

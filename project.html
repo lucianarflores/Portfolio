@@ -1,33 +1,676 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A reusable project case-study template with clearly labeled placeholders for every stage of the design process."><meta name="theme-color" content="#ffffff"><title>Project Template | Luciana</title>
-  <link rel="stylesheet" href="css/styles.css"><script src="js/main.js" defer></script><script src="js/glitter.js" defer></script><script src="js/project.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><a class="wordmark" href="index.html" aria-label="Luciana Flores home">Luciana Flores</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button><nav id="navigation" aria-label="Main navigation"><a href="index.html#work">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="resume-nav" href="Luciana%20Flores.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
-  <main id="main" class="page-width interior-main">
-    <a class="back-link" href="index.html#work"><span aria-hidden="true">←</span> Back to work</a>
-    <header class="page-heading case-heading"><p class="eyebrow">Case study / <span id="project-number">01</span></p><h1 id="project-title">[Project title 01]</h1><p>[A one-sentence project introduction will go here.]</p><div class="case-meta"><span>[Project category]</span><span>[Project timeline]</span><span>[Tools used]</span></div></header>
-    <div class="case-cover image-placeholder"><span class="placeholder-cross" aria-hidden="true"></span><span>Project cover image placeholder</span></div>
-    <div class="case-layout">
-      <nav class="case-nav" aria-label="Case study sections"><p class="eyebrow">In this case study</p><a href="#overview">01 / Overview</a><a href="#problem">02 / Problem</a><a href="#role">03 / My role</a><a href="#research">04 / Research</a><a href="#flows">05 / Flows & wireframes</a><a href="#decisions">06 / Design decisions</a><a href="#solution">07 / Final solution</a><a href="#testing">08 / Iterations & testing</a><a href="#reflection">09 / Reflection</a></nav>
-      <div class="case-content">
-        <section id="overview"><p class="eyebrow">01 / Context</p><h2>Project overview</h2><p>[Introduce the project, its context, its goals, and who it was designed for.]</p></section>
-        <section id="problem"><p class="eyebrow">02 / The challenge</p><h2>Problem</h2><p>[Describe the problem, who experiences it, and why it matters. Add evidence when available.]</p></section>
-        <section id="role"><p class="eyebrow">03 / Contribution</p><h2>My role</h2><p>[Describe your responsibilities, collaborators, and the scope of your contribution.]</p></section>
-        <section id="research"><p class="eyebrow">04 / Discovery</p><h2>Research</h2><p>[Add your research questions, methods, and key findings. Use real evidence from your process.]</p><div class="case-image image-placeholder"><span class="placeholder-cross" aria-hidden="true"></span><span>Research artifact placeholder</span></div></section>
-        <section id="flows"><p class="eyebrow">05 / Structure</p><h2>User flows and wireframes</h2><p>[Explain the journeys explored and how the early structure took shape.]</p><div class="case-image image-placeholder"><span class="placeholder-cross" aria-hidden="true"></span><span>User flow / wireframe placeholder</span></div></section>
-        <section id="decisions"><p class="eyebrow">06 / Intent</p><h2>Design decisions</h2><p>[Explain key choices, the reasoning behind them, and any tradeoffs you considered.]</p></section>
-        <section id="solution"><p class="eyebrow">07 / The outcome</p><h2>Final solution</h2><p>[Introduce the final design or implementation and connect it to the original problem.]</p><div class="case-image image-placeholder"><span class="placeholder-cross" aria-hidden="true"></span><span>Final solution image placeholder</span></div></section>
-        <section id="testing"><p class="eyebrow">08 / Refinement</p><h2>Iterations and testing</h2><p>[Describe how you evaluated the work, what feedback you received, and what changed as a result.]</p></section>
-        <section id="reflection"><p class="eyebrow">09 / Looking back</p><h2>Reflection and learnings</h2><p>[Reflect on what you learned, what you would improve, and what you would explore next.]</p></section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A reusable project case-study template with clearly labeled placeholders for every stage of the design process."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Project Template | Luciana</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/glitter.js" defer></script>
+    <script src="js/project.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Luciana Flores home"
+        >Luciana Flores</a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html#work">Work</a><a href="about.html">About</a
+        ><a href="contact.html">Contact</a
+        ><a
+          class="resume-nav"
+          href="Luciana%20Flores.pdf"
+          target="_blank"
+          rel="noopener"
+          >Resume</a
+        >
+      </nav>
+    </header>
+    <main id="main" class="page-width interior-main case-main">
+      <a class="back-link" href="index.html#work"
+        ><span aria-hidden="true">←</span> Back to work</a
+      >
+      <header class="page-heading case-heading">
+        <h1 id="project-title">[Project title 01]</h1>
+        <p id="project-summary">
+          [A one-sentence project introduction will go here.]
+        </p>
+        <div id="project-meta" class="case-meta">
+          <span>[Project category]</span><span>[Project timeline]</span
+          ><span>[Tools used]</span>
+        </div>
+      </header>
+      <div id="project-cover" class="case-cover image-placeholder">
+        <span class="placeholder-cross" aria-hidden="true"></span
+        ><span>Zillow</span>
       </div>
-    </div>
-    <div class="case-end"><a class="button button-outline" href="index.html#work"><span aria-hidden="true">←</span> Back to selected work</a></div>
-  </main>
-  <footer class="site-footer page-width"><a class="wordmark" href="index.html">Luciana</a><a href="mailto:lucianarfloress@gmail.com">Say hello <span aria-hidden="true">↗</span></a></footer>
-</body>
+      <div class="case-layout">
+        <nav
+          id="project-navigation"
+          class="case-nav"
+          aria-label="Case study sections"
+        >
+          <p class="eyebrow">In this case study</p>
+          <a href="#overview">01: Overview</a><a href="#problem">02: Problem</a
+          ><a href="#role">03 / My role</a><a href="#research">04: Research</a
+          ><a href="#flows">05: Flows & wireframes</a
+          ><a href="#decisions">06: Design decisions</a
+          ><a href="#solution">07: Final solution</a
+          ><a href="#testing">08: Iterations & testing</a
+          ><a href="#reflection">09: Reflection</a>
+        </nav>
+        <div id="project-content" class="case-content">
+          <section id="overview">
+            <p class="eyebrow">Context</p>
+            <h2>Project overview</h2>
+            <p>
+              [Introduce the project, its context, its goals, and who it was
+              designed for.]
+            </p>
+          </section>
+          <section id="problem">
+            <p class="eyebrow">The challenge</p>
+            <h2>Problem</h2>
+            <p>
+              [Describe the problem, who experiences it, and why it matters. Add
+              evidence when available.]
+            </p>
+          </section>
+          <section id="role">
+            <p class="eyebrow">Contribution</p>
+            <h2>My role</h2>
+            <p>
+              [Describe your responsibilities, collaborators, and the scope of
+              your contribution.]
+            </p>
+          </section>
+          <section id="research">
+            <p class="eyebrow">Discovery</p>
+            <h2>Research</h2>
+            <p>
+              [Add your research questions, methods, and key findings. Use real
+              evidence from your process.]
+            </p>
+            <div class="case-image image-placeholder">
+              <span class="placeholder-cross" aria-hidden="true"></span
+              ><span>Research artifact </span>
+            </div>
+          </section>
+          <section id="flows">
+            <p class="eyebrow">Structure</p>
+            <h2>User flows and wireframes</h2>
+            <p>
+              [Explain the journeys explored and how the early structure took
+              shape.]
+            </p>
+            <div class="case-image image-placeholder">
+              <span class="placeholder-cross" aria-hidden="true"></span
+              ><span>User flow / wireframe</span>
+            </div>
+          </section>
+          <section id="decisions">
+            <p class="eyebrow">Intent</p>
+            <h2>Design decisions</h2>
+            <p>
+              [Explain key choices, the reasoning behind them, and any tradeoffs
+              you considered.]
+            </p>
+          </section>
+          <section id="solution">
+            <p class="eyebrow">The outcome</p>
+            <h2>Final solution</h2>
+            <p>
+              [Introduce the final design or implementation and connect it to
+              the original problem.]
+            </p>
+            <div class="case-image image-placeholder">
+              <span class="placeholder-cross" aria-hidden="true"></span
+              ><span>Final solution </span>
+            </div>
+          </section>
+          <section id="testing">
+            <p class="eyebrow">Refinement</p>
+            <h2>Iterations and testing</h2>
+            <p>
+              [Describe how you evaluated the work, what feedback you received,
+              and what changed as a result.]
+            </p>
+          </section>
+          <section id="reflection">
+            <p class="eyebrow">Looking back</p>
+            <h2>Reflection and learnings</h2>
+            <p>
+              [Reflect on what you learned, what you would improve, and what you
+              would explore next.]
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="case-end">
+        <a class="button button-outline" href="index.html#work"
+          ><span aria-hidden="true">←</span> Back to selected work</a
+        >
+      </div>
+    </main>
+    <template id="wing-snob-case">
+      <section
+        id="overview"
+        data-nav-title="Project overview"
+        aria-labelledby="overview-title"
+      >
+        <p class="eyebrow">Project overview</p>
+        <h2 id="overview-title">Project overview</h2>
+        <p>
+          Wing Snob is a restaurant chain that offers mobile ordering for pickup
+          and delivery. For our UX/UI design project, my team explored how we
+          could improve the experience of browsing its menu.
+        </p>
+        <p>
+          We focused on the steps customers encounter before reaching the menu.
+          In the existing flow, users were required to select a serving option
+          and location before they could explore available items.
+        </p>
+        <p>
+          Our goal was to create a more flexible experience that allowed
+          customers to browse the menu without making those decisions
+          immediately.
+        </p>
+        <dl class="case-facts">
+          <div>
+            <dt>Project type</dt>
+            <dd>Academic UX/UI redesign</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Mobile application</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Figma, FigJam</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Menu browsing, navigation, user flows, and prototyping</dd>
+          </div>
+        </dl>
+      </section>
+      <section
+        id="problem"
+        data-nav-title="The problem"
+        aria-labelledby="problem-title"
+      >
+        <p class="eyebrow">The problem</p>
+        <h2 id="problem-title">The problem</h2>
+        <h3>
+          Why do users need to choose how to order before viewing the menu?
+        </h3>
+        <p>
+          In the existing Wing Snob ordering flow, customers had to select
+          pickup or delivery and choose a location before reaching the menu.
+        </p>
+        <p>
+          This created an unnecessary step for customers who simply wanted to
+          explore the food options before deciding whether to place an order.
+        </p>
+        <p>
+          We identified an opportunity to separate menu browsing from the
+          ordering process, allowing users to explore first and make their
+          selections when they were ready.
+        </p>
+        <p class="case-design-question">
+          How might we allow customers to browse Wing Snob's menu without
+          requiring them to select an ordering method or location first?
+        </p>
+        <div class="case-media">
+          <span>Existing Ordering Flow</span>
+        </div>
+      </section>
+      <section
+        id="role"
+        data-nav-title="My role &amp; team"
+        aria-labelledby="role-title"
+      >
+        <p class="eyebrow">My role &amp; team</p>
+        <h2 id="role-title">My role &amp; team</h2>
+        <p>
+          This was a collaborative redesign project of two, we completed as part
+          of a UX/UI design course.
+        </p>
+        <p>
+          My team worked on analyzing the existing ordering experience,
+          reviewing competing restaurant applications, exploring alternative
+          user flows, and creating a redesigned mobile interface in Figma.
+        </p>
+        <p>
+          The project included user journey mapping, wireframing, interface
+          design, and interactive prototyping.
+        </p>
+      </section>
+      <section
+        id="research"
+        data-nav-title="Research &amp; competitive analysis"
+        aria-labelledby="research-title"
+      >
+        <p class="eyebrow">Research &amp; competitive analysis</p>
+        <h2 id="research-title">Research &amp; competitive analysis</h2>
+        <h3>Understanding the existing ordering experience</h3>
+        <p>
+          We began by reviewing Wing Snob's existing mobile ordering process and
+          mapping the steps a customer needed to complete before reaching the
+          menu and see what could be changed.
+        </p>
+        <p>
+          We focused on the initial ordering experience, particularly the
+          requirement to choose a serving option and location before browsing
+          becuase it was something that bothered us.
+        </p>
+        <h3>Competitive analysis</h3>
+        <p>
+          We also reviewed the mobile ordering experiences of Wingstop and
+          Starbucks to understand how other restaurant applications organize
+          their menus and ordering processes with similar features.
+        </p>
+        <p>
+          The comparison helped us explore different approaches to navigation,
+          menu access, and ordering decisions.
+        </p>
+        <p>
+          Rather than redesigning the entire Wing Snob application, we focused
+          on one specific opportunity: giving customers the option to browse the
+          menu before committing to an ordering method.
+        </p>
+        <div class="case-media-grid analysis-grid">
+          <article
+            class="analysis-card analysis-card-wingstop"
+            aria-labelledby="wingstop-analysis-title"
+          >
+            <div class="analysis-copy">
+              <div
+                class="analysis-brand analysis-brand-wingstop"
+                aria-hidden="true"
+              >
+                <svg viewBox="0 0 150 50" focusable="false">
+                  <g fill="currentColor">
+                    <path
+                      d="M0 5h50l18 19H35L20 18h34L7 13h42zM150 5h-50L82 24h33l15-6H96l47-5h-42z"
+                    />
+                    <circle cx="75" cy="23" r="21" />
+                  </g>
+                  <path
+                    d="M24 23Q75 1 126 23l-7 21Q75 22 31 44Z"
+                    fill="#e8f3ed"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <text
+                    x="75"
+                    y="31"
+                    text-anchor="middle"
+                    fill="currentColor"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="900"
+                  >
+                    WING·STOP
+                  </text>
+                </svg>
+              </div>
+              <h4 id="wingstop-analysis-title">Wingstop</h4>
+              <p class="analysis-subtitle">Competitive Analysis</p>
+              <button
+                class="analysis-action"
+                type="button"
+                aria-label="View Wingstop analysis"
+              >
+                View Analysis <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <div class="analysis-phones" aria-hidden="true">
+              <div class="analysis-phone analysis-phone-home">
+                <div class="analysis-phone-status">
+                  <span>7:14</span><span>▴ ▰</span>
+                </div>
+                <div class="analysis-phone-greeting">
+                  ♙ <span>2,048 / Sign In</span> ⊙
+                </div>
+                <div class="analysis-phone-promo">
+                  <strong>BOLD FLAVORS.<br />BIGGER CRAVINGS.</strong
+                  ><span class="analysis-food">🍗</span
+                  ><span class="analysis-phone-cta">Order Now</span>
+                </div>
+                <div class="analysis-phone-bottom">
+                  <span>▱<br />Carryout</span><span>♧<br />Delivery</span>
+                </div>
+              </div>
+              <div class="analysis-phone analysis-phone-menu">
+                <div class="analysis-phone-status">
+                  <span>7:14</span><span>▴ ▰</span>
+                </div>
+                <strong class="analysis-phone-heading">Order</strong>
+                <div class="analysis-phone-tabs">
+                  <span>Menu</span><span>Groups</span><span>Reorder</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🍗</span><strong>Wings</strong><span>›</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🍤</span><strong>Tenders</strong><span>›</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🍗</span><strong>Boneless</strong><span>›</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🍔</span><strong>Sandwiches</strong><span>›</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="analysis-card analysis-card-starbucks"
+            aria-labelledby="starbucks-analysis-title"
+          >
+            <div class="analysis-copy">
+              <div
+                class="analysis-brand analysis-brand-starbucks"
+                aria-hidden="true"
+              >
+                <svg viewBox="0 0 40 40" focusable="false">
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="m14 13 2-6 4 4 4-4 2 6M12 29c-6-1-7-8-4-11m24 0c3 3 2 10-4 11M13 20c-3 5-3 10-5 12m19-12c3 5 3 10 5 12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <ellipse cx="20" cy="22" rx="7" ry="10" fill="currentColor" />
+                  <path
+                    d="M17 21h1m4 0h1m-5 5q2 2 4 0"
+                    fill="none"
+                    stroke="#006241"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  /></svg
+                ><span>STARBUCKS</span>
+              </div>
+              <h4 id="starbucks-analysis-title">Starbucks</h4>
+              <p class="analysis-subtitle">Competitive Analysis</p>
+              <button
+                class="analysis-action"
+                type="button"
+                aria-label="View Starbucks analysis"
+              >
+                View Analysis <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <div class="analysis-phones" aria-hidden="true">
+              <div class="analysis-phone analysis-phone-home">
+                <div class="analysis-phone-status">
+                  <span>7:14</span><span>▴ ▰</span>
+                </div>
+                <div class="analysis-phone-greeting">
+                  <strong>Good afternoon ☀</strong>
+                </div>
+                <div class="analysis-phone-shortcuts">
+                  ▣ Inbox <span>♧ Stores</span>
+                </div>
+                <div class="analysis-phone-promo">
+                  <strong>Sip into<br />something<br />new</strong
+                  ><span class="analysis-food">🥤</span
+                  ><span class="analysis-phone-cta">View menu</span>
+                </div>
+              </div>
+              <div class="analysis-phone analysis-phone-menu">
+                <div class="analysis-phone-status">
+                  <span>7:14</span><span>▴ ▰</span>
+                </div>
+                <strong class="analysis-phone-heading">Order</strong>
+                <div class="analysis-phone-tabs">
+                  <span>Menu</span><span>Featured</span><span>Previous</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🥤</span><strong>Drinks</strong><span>›</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>🥐</span><strong>Food</strong><span>›</span>
+                </div>
+                <div class="analysis-menu-row">
+                  <span>☕</span><strong>At Home Coffee</strong><span>›</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        id="flows"
+        data-nav-title="User flows &amp; wireframes"
+        aria-labelledby="flows-title"
+      >
+        <p class="eyebrow">User flows &amp; wireframes</p>
+        <h2 id="flows-title">From the existing flow to the redesign</h2>
+        <h3>The original ordering journey</h3>
+        <p>
+          The original ordering journey required users to complete several steps
+          before viewing the menu.
+        </p>
+        <p class="case-flow-sequence">
+          Home → Start New Order → Select Pickup or Delivery → Choose Location →
+          Browse Menu
+        </p>
+        <div class="case-media">
+          <span>Original User Flow</span>
+        </div>
+        <h3>Exploring a different approach</h3>
+        <p>
+          We explored alternative flows that would give customers more control
+          over when to select their ordering preferences.
+        </p>
+        <p>
+          Our proposed solution introduced a Skip option on the serving
+          selection screen, creating another path to the menu.
+        </p>
+        <p class="case-flow-sequence">
+          Home → Start New Order → Choose Serving Option → Skip → Confirm →
+          Browse Menu
+        </p>
+        <p>
+          Customers who already knew how they wanted to order could continue
+          using the existing pickup or delivery options.
+        </p>
+        <div class="case-media">
+          <span>Redesigned User Flow</span>
+        </div>
+        <h3>Early wireframes</h3>
+        <p>
+          We created initial sketches and flow diagrams to explore how the new
+          interaction would fit into the existing mobile experience.
+        </p>
+        <p>
+          These helped us think through the placement of the Skip option, the
+          confirmation message, and the transition to the menu.
+        </p>
+        <div class="case-media">
+          <span>Hand-Drawn Wireframes</span>
+        </div>
+      </section>
+      <section
+        id="decisions"
+        data-nav-title="Key design decisions"
+        aria-labelledby="decisions-title"
+      >
+        <p class="eyebrow">Key design decisions</p>
+        <h2 id="decisions-title">Key design decisions</h2>
+        <h3>Adding the Skip option</h3>
+        <p>
+          We added a Skip button to the serving-option screen so customers could
+          move directly toward the menu without selecting pickup or delivery.
+        </p>
+        <p>
+          This provided another path through the application while keeping the
+          existing ordering choices available.
+        </p>
+        <div class="case-media case-media-portrait">
+          <span>Choose Serving Option Screen</span>
+        </div>
+        <h3>Explaining the limitations</h3>
+        <p>
+          Skipping the serving option and location meant the application would
+          not yet know which items were available at a particular store.
+        </p>
+        <p>
+          To make this clear, we introduced a confirmation message explaining
+          that availability information would not be shown until the customer
+          selected a serving option and store.
+        </p>
+        <p>Users could then cancel or continue to the menu.</p>
+        <div class="case-media case-media-portrait">
+          <span>Skip Confirmation Pop-up</span>
+        </div>
+        <h3>Keeping the interface familiar</h3>
+        <p>
+          Instead of changing the entire application, we maintained Wing Snob's
+          existing visual direction, including its red-and-white color palette,
+          typography, and navigation patterns.
+        </p>
+        <p>
+          Our goal was to introduce the new interaction without making the
+          experience feel disconnected from the rest of the application.
+        </p>
+        <div class="case-media">
+          <span>Typography &amp; Selected Components</span>
+        </div>
+        <dl class="case-tradeoffs">
+          <div>
+            <dt>More flexibility</dt>
+            <dd>
+              Customers can browse the menu without choosing an ordering method
+              first.
+            </dd>
+          </div>
+          <div>
+            <dt>Less availability information</dt>
+            <dd>
+              Store-specific item availability remains unknown until a serving
+              option and store are selected.
+            </dd>
+          </div>
+          <div>
+            <dt>Design response</dt>
+            <dd>
+              A confirmation message explains this limitation before the
+              customer continues.
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section
+        id="solution"
+        data-nav-title="Final solution"
+        aria-labelledby="solution-title"
+      >
+        <p class="eyebrow">Final solution</p>
+        <h2 id="solution-title">Browse first, decide later.</h2>
+        <p>
+          Our final redesign introduced a more flexible way to explore Wing
+          Snob's menu.
+        </p>
+        <p>
+          Customers could still choose pickup or delivery as usual, but they
+          also had the option to skip those selections and browse the menu
+          first.
+        </p>
+        <div class="case-screen-grid">
+          <figure class="case-screen">
+            <div class="case-media case-media-portrait">
+              <span>Skip Button</span>
+            </div>
+            <figcaption>
+              <h3>Choose Serving Option</h3>
+              <p>
+                Customers can skip pickup and delivery selection to browse
+                first.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="case-screen">
+            <div class="case-media case-media-portrait">
+              <span>Confirmation</span>
+            </div>
+            <figcaption>
+              <h3>Skip Confirmation</h3>
+              <p>
+                A message explains when store-specific availability information
+                becomes available.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="case-screen">
+            <div class="case-media case-media-portrait">
+              <span>Menu Categories</span>
+            </div>
+            <figcaption>
+              <h3>Browse Menu</h3>
+              <p>
+                Customers reach the menu without committing to an ordering
+                method.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section
+        id="reflection"
+        data-nav-title="Reflection &amp; next steps"
+        aria-labelledby="reflection-title"
+      >
+        <p class="eyebrow">Reflection &amp; next steps</p>
+        <h2 id="reflection-title">Reflection &amp; next steps</h2>
+        <p>
+          This project helped me understand how even a small change in a user
+          flow can make a difference in the overall experience. It also gave me
+          the opportunity to learn more about user expirence.
+        </p>
+        <p>
+          I learned that something as simple as adding a Skip button can
+          influence how users interact with an app and whether they want to
+          continue using it.
+        </p>
+        <p>
+          If we continued developing the redesign, I would want to conduct
+          usability testing to hear directly from users, understand what works
+          for them, and identify what else could be improved.
+        </p>
+        <p>
+          Overall, this project taught me the importance of considering the
+          entire user journey rather than focusing only on individual screens.
+        </p>
+      </section>
+    </template>
+    <footer class="site-footer page-width">
+      <a class="wordmark" href="index.html">Luciana</a
+      ><a href="mailto:lucianarfloress@gmail.com"
+        >Say hello <span aria-hidden="true">↗</span></a
+      >
+    </footer>
+  </body>
 </html>
